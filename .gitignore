@@ -128,3 +128,7 @@ node_modules/
 # Ignore IDEA files
 .idea/
 local.properties
+
+### Project-specific (RTP Play research artifacts, not part of the distributable patch)
+app-extracted/
+*.apkm

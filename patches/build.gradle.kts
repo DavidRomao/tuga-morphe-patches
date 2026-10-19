@@ -1,12 +1,11 @@
-group = "app.template"
+group = "pt.tuga.morphepatches"
 
 patches {
-    // TODO: Update this section with your project details.
     about {
-        name = "UserXYZ Patches"
-        description = "Patches for apps I like"
-        source = "git@github.com:UserXYZ/morphe-patches.git"
-        author = "Awesome dev"
+        name = "Tuga Morphe Patches"
+        description = "Community Morphe patches for Portuguese (and Lusophone) apps."
+        source = "git@github.com:DavidRomao/tuga-morphe-patches.git"
+        author = "DavidRomao"
         contact = "na"
         website = "na"
         license = "GPLv3"
