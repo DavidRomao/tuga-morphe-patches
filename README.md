@@ -1,6 +1,6 @@
 # 👋🧩 Tuga Morphe Patches
 
-Community Morphe patches for Portuguese (and Lusophone) apps.
+Community Morphe patches for RTP Play Android TV app.
 
 ## ❓ About
 
