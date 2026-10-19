@@ -1,5 +1,32 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "0.0.0",
-  "patches": []
+  "version": "1.0.0-dev.1",
+  "patches": [
+    {
+      "name": "Disable ads",
+      "description": "Disables the pre-roll ad request for both on-demand and live TV playback.",
+      "default": true,
+      "category": null,
+      "compatiblePackages": [
+        {
+          "packageName": "pt.rtp.play",
+          "name": "RTP Play",
+          "description": null,
+          "apkFileType": "APKM",
+          "appIconColor": "#0074FF",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "1.0.70",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    }
+  ]
 }
