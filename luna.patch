@@ -1,0 +1,24 @@
+diff --git a/smali_classes2/com/amazon/spiderpork/streamconfig/codec/CodecUtils.smali b/smali_classes2/com/amazon/spiderpork/streamconfig/codec/CodecUtils.smali
+index 99677fc4..9b9d9b29 100644
+--- a/smali_classes2/com/amazon/spiderpork/streamconfig/codec/CodecUtils.smali
++++ b/smali_classes2/com/amazon/spiderpork/streamconfig/codec/CodecUtils.smali
+@@ -503,6 +503,19 @@
+     .line 53
+     invoke-direct/range {v0 .. v6}, Lcom/amazon/spiderpork/streamconfig/codec/CodecConfig;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;ZZ)V
+ 
++    # Avoid codecs not supporting low latency
++    invoke-virtual {v0}, Lcom/amazon/spiderpork/streamconfig/codec/CodecConfig;->isLowLatency()Z
++
++    move-result v1
++
++    if-nez v1, :low_latency_supported
++
++    const/4 v1, 0x0
++
++    return-object v1
++
++    :low_latency_supported
++
+     .line 54
+     .line 55
+     .line 56
